@@ -32,7 +32,7 @@ case 6:
 }
 
 function get_time(){//시/분/초 반환
-    return (new Date().getHours())+":"+(new Date().getMinutes())+":"+(new Date().getSeconds()<10?"0"+new Date().getSeconds():new Date().getSeconds());
+    return (new Date().getHours()<10?"0"+new Date().getHours():new Date().getHours())+":"+(new Date().getMinutes()<10?"0"+new Date().getMinutes():new Date().getMinutes())+":"+(new Date().getSeconds()<10?"0"+new Date().getSeconds():new Date().getSeconds());
 }
 
 function set_time(){//스태이스 변경
