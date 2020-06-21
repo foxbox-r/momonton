@@ -1,0 +1,33 @@
+/*reset*/
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1547005784-6b8e1efab515?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQwMjQzfQ");background-size:cover;}
+a{color:white;text-decoration:none;}
+
+/*rayout*/
+#root{width:100%;height:730px;position:relative;}
+#root .App{margin:0 auto;display:inline-block;position:absolute;left:50%;top:5%;transform:translateX(-50%);}
+#root .App #time_box{color:white;padding:20px;}
+#root .App #_todo{text-align:center;color:white;padding-bottom:50px;}
+
+/*time_box*/
+#root .App #time_box #time_box_day{font-size:1.7rem;text-align:right;}
+#root .App #time_box #time_box_time{font-size:10rem;}
+
+/*_todo*/
+#root .App #_todo #todo_header{margin:20px;}
+#root .App #_todo form{}
+#root .App #_todo form input{width:70%;height:30px;background-color:transparent;border:none;border-bottom:3px solid white;font-size:1.5rem;color:white;padding:10px;}
+#root .App #_todo form input::placeholder{color:white;padding:10px;}
+#root .App #_todo ul{list-style:none;}
+
+#root .App #_todo ul li{margin:10px;font-size:1.7rem;}
+#root .App #_todo ul li .x_but{display:inline-block;width:20px;height:20px;position:relative;margin-right:20px;}
+#root .App #_todo ul li .x_but span{background-color:white;position:absolute;display:inline-block;width:90%;height:2px;left:0;transition:all .25s;border-radius:30%;}
+#root .App #_todo ul li .x_but span:nth-child(1){top:30%;}
+#root .App #_todo ul li .x_but span:nth-child(2){bottom:30%;}
+
+#root .App #_todo ul li .x_but:hover span{top:50%;transform:translateY(-50%);}
+#root .App #_todo ul li .x_but:hover span:nth-child(1){transform:rotate(45deg);}
+#root .App #_todo ul li .x_but:hover span:nth-child(2){transform:rotate(-45deg);}
+
+#root .App #_todo ul li .do_list{}
